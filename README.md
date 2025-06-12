@@ -32,8 +32,8 @@ This project is an intelligent network traffic analysis agent. It takes a PCAP f
 - ollama (with `tinyllama` model)
 
 ## Architecture
-```mermaid
-flowchart TD
+```
+   flowchart TD
     A[User provides PCAP file] --> B[Parse PCAP into flows]
     B --> C[Extract features (duration, src_bytes, dst_bytes, etc.)]
     C --> D[Classify flows with ML model]
