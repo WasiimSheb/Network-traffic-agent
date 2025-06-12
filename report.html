@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Cyber Agent Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .summary, .llm-section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+    </style>
+</head>
+<body>
+    <h1>AI Cyber Agent Report</h1>
+    <div class="summary">
+        <h2>📊 Summary</h2>
+        <p><strong>Generated:</strong> 2025-06-05 17:12:56.280149</p>
+        <p><strong>Total flows analyzed:</strong> 392</p>
+        <p><strong>Flows flagged as malicious:</strong> 180</p>
+    </div>
+
+    <div class="summary">
+        <h2>⚠️ Sample Malicious Flows</h2>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Protocol</th>
+                <th>Length</th>
+                <th>Timestamp</th>
+            </tr>
+    
+            <tr>
+                <td>1</td>
+                <td>192.168.1.1:1025</td>
+                <td>192.168.1.254:53</td>
+                <td>UDP</td>
+                <td>87</td>
+                <td>1160011513.85759</td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td>192.168.1.1:1099</td>
+                <td>207.46.18.94:80</td>
+                <td>TCP</td>
+                <td>62</td>
+                <td>1160011514.630658</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td>192.168.1.1:1099</td>
+                <td>207.46.18.94:80</td>
+                <td>TCP</td>
+                <td>60</td>
+                <td>1160011514.630897</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td>192.168.1.1:1099</td>
+                <td>207.46.18.94:80</td>
+                <td>TCP</td>
+                <td>125</td>
+                <td>1160011514.632197</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td>192.168.1.1:1099</td>
+                <td>207.46.18.94:80</td>
+                <td>TCP</td>
+                <td>60</td>
+                <td>1160011514.66209</td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td>192.168.1.1:1099</td>
+                <td>207.46.18.94:80</td>
+                <td>TCP</td>
+                <td>60</td>
+                <td>1160011514.662404</td>
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                <td>192.168.1.1:1099</td>
+                <td>207.46.18.94:80</td>
+                <td>TCP</td>
+                <td>60</td>
+                <td>1160011514.662426</td>
+            </tr>
+        
+            <tr>
+                <td>8</td>
+                <td>192.168.1.1:1025</td>
+                <td>192.168.1.254:53</td>
+                <td>UDP</td>
+                <td>81</td>
+                <td>1160011515.003214</td>
+            </tr>
+        
+            <tr>
+                <td>9</td>
+                <td>192.168.1.1:1025</td>
+                <td>192.168.1.254:53</td>
+                <td>UDP</td>
+                <td>76</td>
+                <td>1160011515.58256</td>
+            </tr>
+        
+            <tr>
+                <td>10</td>
+                <td>192.168.1.1:1102</td>
+                <td>61.121.100.107:80</td>
+                <td>TCP</td>
+                <td>62</td>
+                <td>1160011516.13111</td>
+            </tr>
+        
+        </table>
+    </div>
+
+    <div class="llm-section">
+        <h2>🤖 LLM Threat Explanation</h2>
+        <p>The detected network flows on the given set of networks are flagged as MALICIOUS due to suspicious behavior or attack categories such as malware scanning, TCP protocol packets with excessive length, and C2 communications. Specific attack categories may be identified based on analyzing the network traffic. Based on the given examples, the potential attack scenarios could include a possible malware infection, a command-and-control (C2) communication to a remote location, or a denial-of-service (DoS) attack.</p>
+    </div>
+</body>
+</html>
+    
