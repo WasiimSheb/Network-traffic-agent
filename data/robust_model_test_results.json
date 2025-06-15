@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-06-15T15:04:34.119750",
+  "model_type": "robust_universal",
+  "individual_results": [
+    {
+      "dataset": "KDD Cup 99",
+      "accuracy": 0.9215,
+      "samples": 2000,
+      "attack_ratio": 0.5765
+    },
+    {
+      "dataset": "CTU-13",
+      "accuracy": 0.996,
+      "samples": 2000,
+      "attack_ratio": 0.5
+    }
+  ],
+  "robustness_metrics": {
+    "average_accuracy": 0.95875,
+    "std_accuracy": 0.037250000000000005,
+    "min_accuracy": 0.9215,
+    "max_accuracy": 0.996,
+    "robustness_score": "GOOD"
+  }
+}
