@@ -1,0 +1,37 @@
+{
+  "downloaded_pcaps": [
+    {
+      "filename": "http_sample.cap",
+      "type": "HTTP Traffic",
+      "source": "Wireshark Sample Captures",
+      "description": "Contains HTTP GET and POST requests with responses",
+      "use_case": "Web traffic analysis, HTTP protocol learning"
+    },
+    {
+      "filename": "dns_sample.cap",
+      "type": "DNS Traffic",
+      "source": "Wireshark Sample Captures",
+      "description": "DNS queries and responses for various domains",
+      "use_case": "DNS analysis, domain resolution patterns"
+    },
+    {
+      "filename": "ftp_sample.cap",
+      "type": "FTP Traffic",
+      "source": "Wireshark Sample Captures",
+      "description": "FTP login and file transfer session",
+      "use_case": "File transfer protocol analysis"
+    }
+  ],
+  "usage_notes": [
+    "These are small sample files for testing and learning",
+    "For production models, larger and more diverse datasets are recommended",
+    "Consider the CTU-13 full dataset for comprehensive botnet analysis",
+    "Always validate PCAP integrity before processing"
+  ],
+  "next_steps": [
+    "Process PCAPs with your existing parse_pcap.py script",
+    "Extract features using extract_features.py",
+    "Combine with existing datasets for training",
+    "Consider downloading larger datasets from the manual instructions"
+  ]
+}

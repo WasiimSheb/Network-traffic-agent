@@ -43,9 +43,22 @@ This project is an intelligent network traffic analysis agent. It takes a PCAP f
 │   ├── ollama_summary.py
 │   ├── parse_pcap.py
 │   └── train_classifier.py
+├── scripts/
+│   ├── expand_dataset.py
+│   ├── analyze_datasets.py
+│   ├── download_additional_pcaps.py
+│   └── dataset_summary.py
 ├── data/
 │   ├── kdd_train.csv
-│   └── toolsmith.pcap
+│   ├── toolsmith.pcap
+│   ├── csv/
+│   │   ├── CTU13_Attack_Traffic.csv
+│   │   └── CTU13_Normal_Traffic.csv
+│   ├── pcaps/
+│   │   └── [additional PCAP files]
+│   ├── dataset_info.json
+│   ├── dataset_analysis.json
+│   └── DOWNLOAD_INSTRUCTIONS.md
 ├── models/
 │   └── model.pkl
 ├── requirements.txt
@@ -61,6 +74,10 @@ This project is an intelligent network traffic analysis agent. It takes a PCAP f
 - pyshark
 - joblib
 - ollama (with `tinyllama` model)
+- requests
+- matplotlib
+- seaborn
+- numpy
 
 ## Architecture
 ```
@@ -78,6 +95,20 @@ Contributions are welcome! Please open an issue or submit a pull request if you 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+## Dataset Expansion
+The project now includes an expanded dataset for improved model robustness:
+- **CTU-13 Dataset**: Botnet attack and normal traffic samples (22+ MB)
+- **Additional PCAP samples**: Various protocol samples for testing
+- **Dataset analysis tools**: Scripts to analyze and compare datasets
+
+### Expanding Your Dataset
+1. **Automatic expansion**: `python scripts/expand_dataset.py`
+2. **Manual downloads**: See `data/DOWNLOAD_INSTRUCTIONS.md`
+3. **Dataset analysis**: `python scripts/analyze_datasets.py`
+4. **Summary overview**: `python scripts/dataset_summary.py`
+
 ## Notes
-- The model is trained on the KDD Cup 99 dataset. For best results, extract as many real features as possible from your PCAPs.
-- This is a prototype and can be extended for more robust, production-grade use. 
+- The model is trained on the KDD Cup 99 dataset and can be enhanced with CTU-13 data
+- For best results, extract as many real features as possible from your PCAPs
+- The expanded dataset provides 10x more data with diverse attack patterns
+- This is a prototype and can be extended for more robust, production-grade use 

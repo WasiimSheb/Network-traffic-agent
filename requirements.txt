@@ -2,4 +2,8 @@ scikit-learn
 pandas
 pyshark
 joblib
-ollama 
+ollama
+requests
+matplotlib
+seaborn
+numpy 

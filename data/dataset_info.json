@@ -1,0 +1,54 @@
+{
+  "created": "2025-06-15T13:57:40.342107",
+  "datasets": {
+    "ctu13_csv": {
+      "name": "CTU-13 CSV Dataset",
+      "description": "Processed CTU-13 dataset with botnet, normal and background traffic in CSV format",
+      "urls": [
+        "https://raw.githubusercontent.com/imfaisalmalik/CTU13-CSV-Dataset/main/CTU13_Attack_Traffic.csv",
+        "https://raw.githubusercontent.com/imfaisalmalik/CTU13-CSV-Dataset/main/CTU13_Normal_Traffic.csv"
+      ],
+      "type": "csv",
+      "size": "~50MB"
+    },
+    "malware_traffic_analysis": {
+      "name": "Malware Traffic Analysis Samples",
+      "description": "Recent malware traffic samples from malware-traffic-analysis.net",
+      "urls": [
+        "https://www.malware-traffic-analysis.net/training/host-and-user-ID.html"
+      ],
+      "type": "pcap",
+      "note": "Manual download required due to password protection"
+    },
+    "cicids2017": {
+      "name": "CICIDS2017 Dataset",
+      "description": "Intrusion Detection Evaluation Dataset with benign and attack traffic",
+      "urls": [
+        "https://www.unb.ca/cic/datasets/ids-2017.html"
+      ],
+      "type": "csv",
+      "note": "Manual download required from official source"
+    },
+    "unsw_nb15": {
+      "name": "UNSW-NB15 Dataset",
+      "description": "Network intrusion dataset with nine attack families",
+      "urls": [
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": "csv",
+      "note": "Manual download required from official source"
+    }
+  },
+  "directory_structure": {
+    "pcaps": "PCAP files for network traffic analysis",
+    "csv": "CSV files with processed network features",
+    "malware": "Malware-related traffic samples",
+    "normal": "Normal/benign traffic samples"
+  },
+  "usage_notes": [
+    "Always verify dataset licenses before use",
+    "Some datasets require manual download due to access restrictions",
+    "Consider data privacy and ethical use guidelines",
+    "Validate data integrity after download"
+  ]
+}
