@@ -372,19 +372,11 @@ python scripts/analyze_datasets.py
 python src/classify_flows.py data/toolsmith.pcap
 ```
 
-## 📄 License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 - **KDD Cup 99**: UCI Machine Learning Repository
 - **CTU-13**: Czech Technical University in Prague
 - **Ollama**: Local LLM integration
 - **scikit-learn**: Machine learning framework
 - **pyshark**: PCAP parsing capabilities
-
-## 📞 Support & Contact
-- **Issues**: Use GitHub Issues for bug reports and feature requests
-- **Documentation**: Check the `data/` directory for detailed guides
-- **Performance**: Run `python scripts/dataset_summary.py` for system status
 
 ---
