@@ -171,7 +171,7 @@ graph TD
     C --> D[Robust ML Classification]
     D --> E{Malicious Traffic?}
     E -->|Yes| F[Generate Threat Summary]
-    E -->|No| G[Log Normal Activity]
+    E -->|No| H[Log Normal Activity]
     F --> H[LLM Analysis with Ollama]
     H --> I[Professional Security Report]
     G --> I
