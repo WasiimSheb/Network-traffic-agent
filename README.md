@@ -174,7 +174,6 @@ graph TD
     E -->|No| H[Log Normal Activity]
     F --> H[LLM Analysis with Ollama]
     H --> I[Professional Security Report]
-    G --> I
     I --> J[Output Results]
 ```
 
